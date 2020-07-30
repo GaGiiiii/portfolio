@@ -1082,3 +1082,17 @@ section {
     padding-right: 20px 15px;
   }
 }
+
+
+
+
+
+
+
+
+
+@media (max-width: 1204px) {
+  #hero{
+    background-position-x: 0;
+  }
+}
