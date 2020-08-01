@@ -542,7 +542,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 130px;
+  /* padding-bottom: 130px; */
 }
 
 .contact .info {
@@ -856,15 +856,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  padding: 15px;
-  color: #f4f6fd;
-  font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  z-index: 9999;
-  background: #040b14;
+  margin-top: 5rem;
 }
 
 #footer .copyright {
@@ -875,7 +867,7 @@ section {
   padding-top: 5px;
   text-align: center;
   font-size: 13px;
-  color: #eaebf0;
+  color: #000;
 }
 
 @media (max-width: 1199px) {
