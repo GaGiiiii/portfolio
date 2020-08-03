@@ -159,3 +159,44 @@
   });
 
 })(jQuery);
+
+
+function validateForm() {
+  
+  let name = document.querySelector("#name");
+  let email = document.querySelector("#email");
+  let subject = document.querySelector("#subject");
+  let message = document.querySelector("#message");
+
+  if(name.value == ""){
+    alert("Potrebno je uneti ime.");
+
+    return false;
+  }
+
+  if(!validateEmail(email.value)){
+    alert("Pogrešan e-mail format.");
+
+    return false;
+  }
+
+  if(subject.value == ""){
+    alert("Potrebno je uneti naslov.");
+
+    return false;
+  }
+
+  if(message.value.length < 20){
+    alert("Potrebno je uneti poruku od bar 20 karaktera");
+
+    return false;
+  }
+
+  return true;
+}
+
+function validateEmail(email) {
+  var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+  return re.test(String(email).toLowerCase());
+}
