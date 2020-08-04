@@ -160,43 +160,124 @@
 
 })(jQuery);
 
+let contactForm = document.getElementById('contact-form'); // Contact Form
+
+let name = document.querySelector("#name"); // Name Input
+let email = document.querySelector("#email"); // Email Input
+let subject = document.querySelector("#subject"); // Subject Input
+let message = document.querySelector("#message"); // Message Input
+
+let nameError = document.querySelector("#name-error"); // Name Error Div 
+let emailError = document.querySelector("#email-error"); // Email Error Div
+let subjectError = document.querySelector("#subject-error"); // Subject Error Div
+let messageError = document.querySelector("#message-error"); // Message Error Div
+
+let successMessage = document.querySelector("#success-message"); // Success Div
+
+// Validate Form
 
 function validateForm() {
-  
-  let name = document.querySelector("#name");
-  let email = document.querySelector("#email");
-  let subject = document.querySelector("#subject");
-  let message = document.querySelector("#message");
+  successMessage.style.display = "none"; // Disable success message 
+  // Remove Scripts
+  name = validateInput(name);
+  subject = validateInput(subject);
+  message = validateInput(message);
+
+  // Check If Valid Inputs
 
   if(name.value == ""){
-    alert("Potrebno je uneti ime.");
+    nameError.style.display = "block";
 
     return false;
+  }else{
+    nameError.style.display = "none";
   }
 
   if(!validateEmail(email.value)){
-    alert("Pogrešan e-mail format.");
+    emailError.style.display = "block";
 
     return false;
+  }else{
+    emailError.style.display = "none";
   }
 
   if(subject.value == ""){
-    alert("Potrebno je uneti naslov.");
+    subjectError.style.display = 'block';
 
     return false;
+  }else{
+    subjectError.style.display = "none";
   }
 
   if(message.value.length < 20){
-    alert("Potrebno je uneti poruku od bar 20 karaktera");
+    messageError.style.display = "block";
 
     return false;
+  }else{
+    messageError.style.display = "none";
   }
 
-  return true;
+  // Send message and show success
+  emailjs.sendForm('gagi8', 'portfolio_template', contactForm);
+  successMessage.style.display = "block";
+
+  return false;
 }
+
+
+name.addEventListener('keyup', () => {
+  if(name.value == ""){
+    nameError.style.display = "block";
+
+    return false;
+  }else{
+    nameError.style.display = "none";
+  }
+});
+
+email.addEventListener('keyup', () => {
+  if(!validateEmail(email.value)){
+    emailError.style.display = "block";
+
+    return false;
+  }else{
+    emailError.style.display = "none";
+  }
+});
+
+subject.addEventListener('keyup', () => {
+  if(subject.value == ""){
+    subjectError.style.display = "block";
+
+    return false;
+  }else{
+    subjectError.style.display = "none";
+  }
+});
+
+message.addEventListener('keyup', () => {
+  if(message.value.length < 20){
+    messageError.style.display = "block";
+
+    return false;
+  }else{
+    messageError.style.display = "none";
+  }
+});
 
 function validateEmail(email) {
   var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   return re.test(String(email).toLowerCase());
+}
+
+function validateInput(input){
+  // Create a new div element
+  let temporalDivElement = document.createElement("div");
+  // Set the HTML content with the providen
+  temporalDivElement.innerHTML = input.value;
+
+  input.value = temporalDivElement.textContent || temporalDivElement.innerText || "";
+
+  return input;
 }
