@@ -179,6 +179,8 @@ switch(croppedURL){
   case 'indexSRB.html':
     languageChosen = 'srb';
     break;
+  default:
+    languageChosen = 'eng';
 }
 
 
