@@ -879,7 +879,24 @@ section {
 
 
 
+#header .profile img.lang-icon-srb, #header .profile img.lang-icon-eng{
+  border: none;
+  height: 35px;
+  width: 35px;
+  margin: 0;
+  display: inline-block;
+  margin-top: .8rem;
+}
 
+#header .profile img.lang-icon-srb:hover, #header .profile img.lang-icon-eng:hover{
+  cursor: pointer;
+  opacity: .7;
+}
+
+#header .profile img.lang-icon-srb{
+  height: 45px;
+  margin-right: 1rem;
+}
 
 .error-message{
   color: red;

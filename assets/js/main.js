@@ -160,6 +160,28 @@
 
 })(jQuery);
 
+
+let languageChosen = ''; // Chosen Language
+
+let currentURL = window.location.href; // Current URL
+let lastIndex = currentURL.lastIndexOf('/'); // Last index of '/' in URL
+let croppedURL = currentURL.substring(lastIndex + 1); // Get index.html or indexSRB.html
+
+let engIcon = document.querySelector('.lang-icon-eng'); // Eng icon
+let srbIcon = document.querySelector('.lang-icon-srb'); // Srb icon
+
+// If URL is index.html language is ENG, if URL is indexSRB.html language is SRB
+
+switch(croppedURL){
+  case 'index.html':
+    languageChosen = 'eng';
+    break;
+  case 'indexSRB.html':
+    languageChosen = 'srb';
+    break;
+}
+
+
 let contactForm = document.getElementById('contact-form'); // Contact Form
 
 let name = document.querySelector("#name"); // Name Input
@@ -281,3 +303,25 @@ function validateInput(input){
 
   return input;
 }
+
+// When user click srb icon change language to Serbian if its not currently Serbian
+
+srbIcon.addEventListener('click', () => {
+  if(languageChosen == 'srb'){
+    return;
+  }else{
+    window.location.href = "indexSRB.html";
+  }
+});
+
+// When user click eng icon change language to English if its not currently English
+
+engIcon.addEventListener('click', () => {
+  if(languageChosen == 'eng'){
+    return;
+  }else{
+    window.location.href = "index.html";
+  }
+});
+
+
