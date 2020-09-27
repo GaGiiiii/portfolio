@@ -1,4 +1,4 @@
-!(function($) {
+!(function ($) {
   "use strict";
 
   // Hero typed
@@ -15,7 +15,7 @@
   }
 
   // Smooth scroll for the navigation menu and links with .scrollto classes
-  $(document).on('click', '.nav-menu a, .scrollto', function(e) {
+  $(document).on('click', '.nav-menu a, .scrollto', function (e) {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       e.preventDefault();
       var target = $(this.hash);
@@ -42,7 +42,7 @@
   });
 
   // Activate smooth scroll on page load with hash links in the url
-  $(document).ready(function() {
+  $(document).ready(function () {
     if (window.location.hash) {
       var initial_nav = window.location.hash;
       if ($(initial_nav).length) {
@@ -54,12 +54,12 @@
     }
   });
 
-  $(document).on('click', '.mobile-nav-toggle', function(e) {
+  $(document).on('click', '.mobile-nav-toggle', function (e) {
     $('body').toggleClass('mobile-nav-active');
     $('.mobile-nav-toggle i').toggleClass('icofont-navigation-menu icofont-close');
   });
 
-  $(document).click(function(e) {
+  $(document).click(function (e) {
     var container = $(".mobile-nav-toggle");
     if (!container.is(e.target) && container.has(e.target).length === 0) {
       if ($('body').hasClass('mobile-nav-active')) {
@@ -73,10 +73,10 @@
   var nav_sections = $('section');
   var main_nav = $('.nav-menu, .mobile-nav');
 
-  $(window).on('scroll', function() {
+  $(window).on('scroll', function () {
     var cur_pos = $(this).scrollTop() + 200;
 
-    nav_sections.each(function() {
+    nav_sections.each(function () {
       var top = $(this).offset().top,
         bottom = top + $(this).outerHeight();
 
@@ -93,7 +93,7 @@
   });
 
   // Back to top button
-  $(window).scroll(function() {
+  $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
     } else {
@@ -101,7 +101,7 @@
     }
   });
 
-  $('.back-to-top').click(function() {
+  $('.back-to-top').click(function () {
     $('html, body').animate({
       scrollTop: 0
     }, 1500, 'easeInOutExpo');
@@ -115,8 +115,8 @@
   });
 
   // Skills section
-  $('.skills-content').waypoint(function() {
-    $('.progress .progress-bar').each(function() {
+  $('.skills-content').waypoint(function () {
+    $('.progress .progress-bar').each(function () {
       $(this).css("width", $(this).attr("aria-valuenow") + '%');
     });
   }, {
@@ -124,13 +124,13 @@
   });
 
   // Porfolio isotope and filter
-  $(window).on('load', function() {
+  $(window).on('load', function () {
     var portfolioIsotope = $('.portfolio-container').isotope({
       itemSelector: '.portfolio-item',
       layoutMode: 'fitRows'
     });
 
-    $('#portfolio-flters li').on('click', function() {
+    $('#portfolio-flters li').on('click', function () {
       $("#portfolio-flters li").removeClass('filter-active');
       $(this).addClass('filter-active');
 
@@ -141,7 +141,7 @@
     });
 
     // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function() {
+    $(document).ready(function () {
       $('.venobox').venobox();
     });
   });
@@ -154,7 +154,7 @@
       once: true
     });
   }
-  $(window).on('load', function() {
+  $(window).on('load', function () {
     aos_init();
   });
 
@@ -172,7 +172,7 @@ let srbIcon = document.querySelector('.lang-icon-srb'); // Srb icon
 
 // If URL is index.html language is ENG, if URL is indexSRB.html language is SRB
 
-switch(croppedURL){
+switch (croppedURL) {
   case 'index.html':
     languageChosen = 'eng';
     break;
@@ -209,35 +209,35 @@ function validateForm() {
 
   // Check If Valid Inputs
 
-  if(name.value == ""){
+  if (name.value == "") {
     nameError.style.display = "block";
 
     return false;
-  }else{
+  } else {
     nameError.style.display = "none";
   }
 
-  if(!validateEmail(email.value)){
+  if (!validateEmail(email.value)) {
     emailError.style.display = "block";
 
     return false;
-  }else{
+  } else {
     emailError.style.display = "none";
   }
 
-  if(subject.value == ""){
+  if (subject.value == "") {
     subjectError.style.display = 'block';
 
     return false;
-  }else{
+  } else {
     subjectError.style.display = "none";
   }
 
-  if(message.value.length < 20){
+  if (message.value.length < 20) {
     messageError.style.display = "block";
 
     return false;
-  }else{
+  } else {
     messageError.style.display = "none";
   }
 
@@ -250,41 +250,41 @@ function validateForm() {
 
 
 name.addEventListener('keyup', () => {
-  if(name.value == ""){
+  if (name.value == "") {
     nameError.style.display = "block";
 
     return false;
-  }else{
+  } else {
     nameError.style.display = "none";
   }
 });
 
 email.addEventListener('keyup', () => {
-  if(!validateEmail(email.value)){
+  if (!validateEmail(email.value)) {
     emailError.style.display = "block";
 
     return false;
-  }else{
+  } else {
     emailError.style.display = "none";
   }
 });
 
 subject.addEventListener('keyup', () => {
-  if(subject.value == ""){
+  if (subject.value == "") {
     subjectError.style.display = "block";
 
     return false;
-  }else{
+  } else {
     subjectError.style.display = "none";
   }
 });
 
 message.addEventListener('keyup', () => {
-  if(message.value.length < 20){
+  if (message.value.length < 20) {
     messageError.style.display = "block";
 
     return false;
-  }else{
+  } else {
     messageError.style.display = "none";
   }
 });
@@ -295,7 +295,7 @@ function validateEmail(email) {
   return re.test(String(email).toLowerCase());
 }
 
-function validateInput(input){
+function validateInput(input) {
   // Create a new div element
   let temporalDivElement = document.createElement("div");
   // Set the HTML content with the providen
@@ -309,9 +309,9 @@ function validateInput(input){
 // When user click srb icon change language to Serbian if its not currently Serbian
 
 srbIcon.addEventListener('click', () => {
-  if(languageChosen == 'srb'){
+  if (languageChosen == 'srb') {
     return;
-  }else{
+  } else {
     window.location.href = "indexSRB.html";
   }
 });
@@ -319,11 +319,50 @@ srbIcon.addEventListener('click', () => {
 // When user click eng icon change language to English if its not currently English
 
 engIcon.addEventListener('click', () => {
-  if(languageChosen == 'eng'){
+  if (languageChosen == 'eng') {
     return;
-  }else{
+  } else {
     window.location.href = "index.html";
   }
 });
 
 
+
+
+let firstOfThreeDiv = document.getElementById('first-of-three'); // First Three Projects Div
+let secondOfThreeDiv = document.getElementById('second-of-three'); // Second Three Projects Div
+let thirdOfThreeDiv = document.getElementById('third-of-three'); // Third Three Projects Div
+
+let firstOfThreeBtn = document.getElementById('first-of-three-btn'); // First Three Projects Button
+let secondOfThreeBtn = document.getElementById('second-of-three-btn'); // Second Three Projects Button
+let thirdOfThreeBtn = document.getElementById('third-of-three-btn'); // Third Three Projects Button
+
+firstOfThreeBtn.addEventListener('click', (event) => {
+  firstOfThreeDiv.style.display = "block";
+  secondOfThreeDiv.style.display = "none";
+  thirdOfThreeDiv.style.display = "none";
+
+  firstOfThreeBtn.classList.add("active");
+  secondOfThreeBtn.classList.remove("active");
+  thirdOfThreeBtn.classList.remove("active");
+});
+
+secondOfThreeBtn.addEventListener('click', (event) => {
+  firstOfThreeDiv.style.display = "none";
+  secondOfThreeDiv.style.display = "block";
+  thirdOfThreeDiv.style.display = "none";
+
+  firstOfThreeBtn.classList.remove("active");
+  secondOfThreeBtn.classList.add("active");
+  thirdOfThreeBtn.classList.remove("active");
+});
+
+thirdOfThreeBtn.addEventListener('click', (event) => {
+  firstOfThreeDiv.style.display = "none";
+  secondOfThreeDiv.style.display = "none";
+  thirdOfThreeDiv.style.display = "block";
+
+  firstOfThreeBtn.classList.remove("active");
+  secondOfThreeBtn.classList.remove("active");
+  thirdOfThreeBtn.classList.add("active");
+});
