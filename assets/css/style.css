@@ -211,7 +211,8 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("https://www.elhawy.it/wp-content/uploads/2019/03/portfolio-background.jpg");
+  /* background: url("https://cdn.hipwallpaper.com/i/75/68/8BWvUj.jpg"); */
+  background: url("../img/hero.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: 300px;
