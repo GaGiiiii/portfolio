@@ -352,6 +352,10 @@ section {
   background: none;
 }
 
+.skills .section-title h2{
+  margin-bottom: 0;
+}
+
 .skills .progress .skill {
   padding: 10px 0;
   margin: 0 0 6px 0;
