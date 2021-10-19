@@ -107,7 +107,7 @@
                 <div class="col-lg-6">
                   <ul>
                     <li><i class="icofont-rounded-right"></i> <strong>Grad:</strong> Beograd, Srbija</li>
-                    <li><i class="icofont-rounded-right"></i> <strong>Godine:</strong> 23</li>
+                    <li><i class="icofont-rounded-right"></i> <strong>Godine:</strong> 24</li>
                   </ul>
                 </div>
                 <div class="col-lg-6">
@@ -131,76 +131,223 @@
         </div>
       </section><!-- End About Section -->
 
-      <!-- ======= Skills Section ======= -->
-      <section id="skills" class="skills section-bg">
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio section-bg">
         <div class="container">
 
           <div class="section-title">
-            <h2>Veštine</h2>
+            <h2>Portfolio</h2>
+            <!-- <p>Ovde možete pogledati projekte koje sam napravio u proteklih nekoliko godina. Za svaki projekat je dostupna slika kao i link do originalnog sajta gde možete testirati potpunu funkcionalnost sajta. Klikom na neki od 3 prikazana jezika ispod biće prikazani projekti pravljeni u odgovarajućem jeziku.</p> -->
+            <p>Ovde možete pogledati projekte koje sam napravio u proteklih nekoliko godina. Za svaki projekat je
+              dostupna slika kao i link do originalnog sajta gde možete testirati potpunu funkcionalnost sajta. 
+              Za pojedine projekte dostupan je Github link, kao i Youtube video sa kratkom prezentacijom sajta. Klikom
+              na neki od 3 prikazana jezika ispod biće prikazani projekti pravljeni u odgovarajućem jeziku.</p>
           </div>
 
-          <div class="row skills-content">
+          <div class="row" data-aos="fade-up">
+            <div class="col-lg-12 d-flex justify-content-center">
+              <ul id="portfolio-flters">
+                <li data-filter="*" class="filter-active">All</li>
+                <li data-filter=".filter-php">PHP</li>
+                <li data-filter=".filter-nodejs">NODEJS</li>
+                <li data-filter=".filter-front">FRONT END</li>
+              </ul>
+            </div>
+          </div>
 
-            <div class="col-lg-6" data-aos="fade-up">
+          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-              <div class="progress">
-                <span class="skill">HTML <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
-                    aria-valuemax="100"></div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+              <div class="portfolio-wrap">
+                <img src="assets/img/tatamata.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/tatamata.png" data-gall="portfolioGallery" class="venobox" title="Tatamata"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://tatamata.rs/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                  <a href="https://www.youtube.com/watch?v=tdtOvkz0dJw" target="_blank" title="More Details"><i
+                      class='bx bxl-youtube'></i></a>
                 </div>
               </div>
-
-              <div class="progress">
-                <span class="skill">CSS <i class="val">85%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">JavaScript <i class="val">70%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                  </div>
-                </div>
-              </div>
-
             </div>
 
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-              <div class="progress">
-                <span class="skill">PHP <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+              <div class="portfolio-wrap">
+                <img src="assets/img/techyyz.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/techyyz.png" data-gall="portfolioGallery" class="venobox" title="MovieX"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://techzzy-front.herokuapp.com/" target="_blank" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                  <a href="https://www.youtube.com/watch?v=S1W-AviZIWA" target="_blank" title="Youte"><i
+                      class='bx bxl-youtube'></i></a>
+                  <a href="https://github.com/GaGiiiii/techzzyDIPL" target="_blank" title="Github"><i
+                      class='bx bxl-github'></i></a>
                 </div>
               </div>
+            </div>
 
-              <div class="progress">
-                <span class="skill">NodeJS <i class="val">70%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+              <div class="portfolio-wrap">
+                <img src="assets/img/pixelate.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/pixelate.png" data-gall="portfolioGallery" class="venobox" title="MovieX"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://pixelate.rs/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
                 </div>
               </div>
+            </div>
 
-              <div class="progress">
-                <span class="skill">MySQL / MongoDB <i class="val">70%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
-                  </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+              <div class="portfolio-wrap">
+                <img src="assets/img/moviex.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/moviex.png" data-gall="portfolioGallery" class="venobox" title="MovieX"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://moviexg.herokuapp.com/" target="_blank" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                  <a href="https://www.youtube.com/watch?v=ddIcFGz1j14" target="_blank" title="Youtube"><i
+                      class='bx bxl-youtube'></i></a>
+                  <a href="https://github.com/GaGiiiii/moviex" target="_blank" title="Github"><i
+                      class='bx bxl-github'></i></a>
                 </div>
               </div>
+            </div>
 
+            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+              <div class="portfolio-wrap">
+                <img src="assets/img/CINEMATIC.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/CINEMATIC.png" data-gall="portfolioGallery" class="venobox" title="Cinematic"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://cinematic-g.herokuapp.com/" target="_blank" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                  <a href="https://www.youtube.com/watch?v=X14ccBnylKg" target="_blank" title="Youtube"><i
+                      class='bx bxl-youtube'></i></a>
+                  <a href="https://github.com/GaGiiiii/cinematic" target="_blank" title="Github"><i
+                      class='bx bxl-github'></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-nodejs">
+              <div class="portfolio-wrap">
+                <img src="assets/img/Slagalica.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/Slagalica.png" data-gall="portfolioGallery" class="venobox" title="Slagalica"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://rmtslagalica.herokuapp.com/" target="_blank" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                  <a href="https://www.youtube.com/watch?v=fiC4PFb157Q" target="_blank" title="Youtube"><i
+                      class='bx bxl-youtube'></i></a>
+                  <a href="https://github.com/GaGiiiii/RMTSlagalica" target="_blank" title="Github"><i
+                      class='bx bxl-github'></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+              <div class="portfolio-wrap">
+                <img src="assets/img/dogsitelaravel.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/dogsitelaravel.png" data-gall="portfolioGallery" class="venobox"
+                    title="dogsiteLARAVEL"><i class="bx bx-plus"></i></a>
+                  <a href="https://dogsite-laravel.herokuapp.com/" target="_blank" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                  <a href="https://www.youtube.com/watch?v=sNAkykDpiV4" target="_blank" title="Youtube"><i
+                      class='bx bxl-youtube'></i></a>
+                  <a href="https://github.com/GaGiiiii/dogsiteLARAVEL" target="_blank" title="Github"><i
+                      class='bx bxl-github'></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+              <div class="portfolio-wrap">
+                <img src="assets/img/dogsitephp.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/dogsitephp.png" data-gall="portfolioGallery" class="venobox" title="dogsitePHP"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://dogsitephp.herokuapp.com/" target="_blank" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                  <a href="https://www.youtube.com/watch?v=BZ8i7LaVNvI" target="_blank" title="Youtube"><i
+                      class='bx bxl-youtube'></i></a>
+                  <a href="https://github.com/GaGiiiii/dogsitePHP" target="_blank" title="Github"><i
+                      class='bx bxl-github'></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+              <div class="portfolio-wrap">
+                <img src="assets/img/mtr.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/mtr.png" data-gall="portfolioGallery" class="venobox" title="MTR"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://mtr-ci.herokuapp.com/" target="_blank" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                  <a href="https://www.youtube.com/watch?v=YYGiDYIDe0o" target="_blank" title="Youtube"><i
+                      class='bx bxl-youtube'></i></a>
+                  <a href="https://github.com/GaGiiiii/mtrCODEIGNITER" target="_blank" title="Github"><i
+                      class='bx bxl-github'></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-front">
+              <div class="portfolio-wrap">
+                <img src="assets/img/tictiactoe.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/tictiactoe.png" data-gall="portfolioGallery" class="venobox" title="TicTacToe"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="http://gagi88.epizy.com/projects/tictactoeJS/" target="_blank" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                  <a href="https://github.com/GaGiiiii/Tic-Tac-Toe-JS" target="_blank" title="Github"><i
+                      class='bx bxl-github'></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-nodejs">
+              <div class="portfolio-wrap">
+                <img src="assets/img/yelpcamp.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/yelpcamp.png" data-gall="portfolioGallery" class="venobox" title="Yelp Camp"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://gagi8.herokuapp.com/" target="_blank" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-front">
+              <div class="portfolio-wrap">
+                <img src="assets/img/cvecaramirkovic.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/cvecaramirkovic.png" data-gall="portfolioGallery" class="venobox"
+                    title="Cvećara Mirković"><i class="bx bx-plus"></i></a>
+                  <a href="https://gagiiiii.github.io/cvecaraMIRKOVICv1/" target="_blank" title="More Details"><i
+                      class="bx bx-link"></i></a>
+                  <a href="https://github.com/GaGiiiii/cvecaraMIRKOVICv1" target="_blank" title="Github"><i
+                      class='bx bxl-github'></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
+              <div class="portfolio-wrap">
+                <img src="assets/img/hakaton.png" class="img-fluid" alt="">
+                <div class="portfolio-links">
+                  <a href="assets/img/hakaton.png" data-gall="portfolioGallery" class="venobox" title="Hakaton 2020"><i
+                      class="bx bx-plus"></i></a>
+                  <a href="https://fonis.rs/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
             </div>
 
           </div>
 
         </div>
-      </section><!-- End Skills Section -->
+      </section><!-- End Portfolio Section -->
 
       <!-- ======= Resume Section ======= -->
       <section id="resume" class="resume">
@@ -359,190 +506,76 @@
         </div>
       </section><!-- End Resume Section -->
 
-      <!-- ======= Portfolio Section ======= -->
-      <section id="portfolio" class="portfolio section-bg">
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills section-bg">
         <div class="container">
 
           <div class="section-title">
-            <h2>Portfolio</h2>
-            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
-            <p>Ovde možete pogledati projekte koje sam napravio u proteklih nekoliko godina. Za svaki projekat je
-              dostupna slika kao i link do originalnog sajta gde možete testirati potpunu funkcionalnost sajta. Klikom
-              na neki od 3 prikazana jezika ispod biće prikazani projekti pravljeni u odgovarajućem jeziku.</p>
+            <h2>Veštine</h2>
           </div>
 
-          <div class="row" data-aos="fade-up">
-            <div class="col-lg-12 d-flex justify-content-center">
-              <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-php">PHP</li>
-                <li data-filter=".filter-nodejs">NODEJS</li>
-                <li data-filter=".filter-front">FRONT END</li>
-              </ul>
-            </div>
-          </div>
+          <div class="row skills-content">
 
-          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-6" data-aos="fade-up">
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
-              <div class="portfolio-wrap">
-                <img src="assets/img/moviex.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/moviex.png" data-gall="portfolioGallery" class="venobox" title="MovieX"><i
-                      class="bx bx-plus"></i></a>
-                  <a href="http://gagi88.epizy.com/projects/moviex/" target="_blank" title="More Details"><i
-                      class="bx bx-link"></i></a>
+              <div class="progress">
+                <span class="skill">HTML <i class="val">100%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                    aria-valuemax="100"></div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
-              <div class="portfolio-wrap">
-                <img src="assets/img/CINEMATIC.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/CINEMATIC.png" data-gall="portfolioGallery" class="venobox" title="Cinematic"><i
-                      class="bx bx-plus"></i></a>
-                  <a href="http://gagi88.epizy.com/projects/cinematic/" target="_blank" title="More Details"><i
-                      class="bx bx-link"></i></a>
+              <div class="progress">
+                <span class="skill">CSS <i class="val">85%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-nodejs">
-              <div class="portfolio-wrap">
-                <img src="assets/img/Slagalica.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/Slagalica.png" data-gall="portfolioGallery" class="venobox" title="Slagalica"><i
-                      class="bx bx-plus"></i></a>
-                  <a href="http://rmtslagalica.herokuapp.com/" target="_blank" title="More Details"><i
-                      class="bx bx-link"></i></a>
+              <div class="progress">
+                <span class="skill">JavaScript <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
               </div>
+
             </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-nodejs">
-              <div class="portfolio-wrap">
-                <img src="assets/img/dfdmovies.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/dfdmovies.png" data-gall="portfolioGallery" class="venobox" title="DFD Movies"><i
-                      class="bx bx-plus"></i></a>
-                  <a href="https://dfdop.herokuapp.com/" target="_blank" title="More Details"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
-              <div class="portfolio-wrap">
-                <img src="assets/img/dogsitelaravel.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/dogsitelaravel.png" data-gall="portfolioGallery" class="venobox"
-                    title="dogsiteLARAVEL"><i class="bx bx-plus"></i></a>
-                  <a href="http://dogsite-laravel.herokuapp.com/" target="_blank" title="More Details"><i
-                      class="bx bx-link"></i></a>
+              <div class="progress">
+                <span class="skill">PHP <i class="val">80%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
-              <div class="portfolio-wrap">
-                <img src="assets/img/dogsitephp.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/dogsitephp.png" data-gall="portfolioGallery" class="venobox" title="dogsitePHP"><i
-                      class="bx bx-plus"></i></a>
-                  <a href="http://gagi8.epizy.com/projects/dogsitePHP/" target="_blank" title="More Details"><i
-                      class="bx bx-link"></i></a>
+              <div class="progress">
+                <span class="skill">NodeJS <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
-              <div class="portfolio-wrap">
-                <img src="assets/img/mtr.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/mtr.png" data-gall="portfolioGallery" class="venobox" title="MTR"><i
-                      class="bx bx-plus"></i></a>
-                  <a href="http://gagi88.epizy.com/projects/mtrFIXED/" target="_blank" title="More Details"><i
-                      class="bx bx-link"></i></a>
+              <div class="progress">
+                <span class="skill">MySQL / MongoDB <i class="val">70%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
-              <div class="portfolio-wrap">
-                <img src="assets/img/contactform.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/contactform.png" data-gall="portfolioGallery" class="venobox"
-                    title="Contact Form"><i class="bx bx-plus"></i></a>
-                  <a href="http://gagi8.epizy.com/projects/paragraf/" target="_blank" title="More Details"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-front">
-              <div class="portfolio-wrap">
-                <img src="assets/img/tictiactoe.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/tictiactoe.png" data-gall="portfolioGallery" class="venobox" title="TicTacToe"><i
-                      class="bx bx-plus"></i></a>
-                  <a href="http://gagi88.epizy.com/projects/tictactoeJS/" target="_blank" title="More Details"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
-              <div class="portfolio-wrap">
-                <img src="assets/img/secretdiary.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/secretdiary.png" data-gall="portfolioGallery" class="venobox"
-                    title="Secret Diary"><i class="bx bx-plus"></i></a>
-                  <a href="http://gagi8.epizy.com/projects/secretdiary/" target="_blank" title="More Details"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-nodejs">
-              <div class="portfolio-wrap">
-                <img src="assets/img/yelpcamp.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/yelpcamp.png" data-gall="portfolioGallery" class="venobox" title="Yelp Camp"><i
-                      class="bx bx-plus"></i></a>
-                  <a href="https://gagi8.herokuapp.com/" target="_blank" title="More Details"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-front">
-              <div class="portfolio-wrap">
-                <img src="assets/img/cvecaramirkovic.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/cvecaramirkovic.png" data-gall="portfolioGallery" class="venobox"
-                    title="Cvećara Mirković"><i class="bx bx-plus"></i></a>
-                  <a href="https://gagiiiii.github.io/cvecaraMIRKOVICv1/" target="_blank" title="More Details"><i
-                      class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 portfolio-item filter-php">
-              <div class="portfolio-wrap">
-                <img src="assets/img/hakaton.png" class="img-fluid" alt="">
-                <div class="portfolio-links">
-                  <a href="assets/img/hakaton.png" data-gall="portfolioGallery" class="venobox" title="Hakaton 2020"><i
-                      class="bx bx-plus"></i></a>
-                  <a href="https://fonis.rs/" target="_blank" title="More Details"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
             </div>
 
           </div>
 
         </div>
-      </section><!-- End Portfolio Section -->
+      </section><!-- End Skills Section -->
 
       <!-- ======= Contact Section ======= -->
       <section id="contact" class="contact">
