@@ -326,43 +326,64 @@ engIcon.addEventListener('click', () => {
   }
 });
 
+let firstG = document.getElementById('firstG'); // First Three Projects Div
+let secondG = document.getElementById('secondG'); // Second Three Projects Div
+let thirdG = document.getElementById('thirdG'); // Third Three Projects Div
+let fourthG = document.getElementById('fourthG'); // Third Three Projects Div
 
+secondG.style.display = 'none';
+thirdG.style.display = 'none';
+fourthG.style.display = 'none';
 
+let firstGBtn = document.getElementById('firstG-btn'); // First Three Projects Button
+let secondGBtn = document.getElementById('secondG-btn'); // Second Three Projects Button
+let thirdGBtn = document.getElementById('thirdG-btn'); // Third Three Projects Button
+let fourthGBtn = document.getElementById('fourthG-btn'); // Third Three Projects Button
 
-let firstOfThreeDiv = document.getElementById('first-of-three'); // First Three Projects Div
-let secondOfThreeDiv = document.getElementById('second-of-three'); // Second Three Projects Div
-let thirdOfThreeDiv = document.getElementById('third-of-three'); // Third Three Projects Div
+firstGBtn.addEventListener('click', (event) => {
+  firstG.style.display = "block";
+  secondG.style.display = "none";
+  thirdG.style.display = "none";
+  fourthG.style.display = "none";
 
-let firstOfThreeBtn = document.getElementById('first-of-three-btn'); // First Three Projects Button
-let secondOfThreeBtn = document.getElementById('second-of-three-btn'); // Second Three Projects Button
-let thirdOfThreeBtn = document.getElementById('third-of-three-btn'); // Third Three Projects Button
-
-firstOfThreeBtn.addEventListener('click', (event) => {
-  firstOfThreeDiv.style.display = "block";
-  secondOfThreeDiv.style.display = "none";
-  thirdOfThreeDiv.style.display = "none";
-
-  firstOfThreeBtn.classList.add("active");
-  secondOfThreeBtn.classList.remove("active");
-  thirdOfThreeBtn.classList.remove("active");
+  firstGBtn.classList.add("active");
+  secondGBtn.classList.remove("active");
+  thirdGBtn.classList.remove("active");
+  fourthGBtn.classList.remove("active");
 });
 
-secondOfThreeBtn.addEventListener('click', (event) => {
-  firstOfThreeDiv.style.display = "none";
-  secondOfThreeDiv.style.display = "block";
-  thirdOfThreeDiv.style.display = "none";
+secondGBtn.addEventListener('click', (event) => {
+  firstG.style.display = "none";
+  secondG.style.display = "block";
+  thirdG.style.display = "none";
+  fourthG.style.display = "none";
 
-  firstOfThreeBtn.classList.remove("active");
-  secondOfThreeBtn.classList.add("active");
-  thirdOfThreeBtn.classList.remove("active");
+  firstGBtn.classList.remove("active");
+  secondGBtn.classList.add("active");
+  thirdGBtn.classList.remove("active");
+  fourthGBtn.classList.remove("active");
 });
 
-thirdOfThreeBtn.addEventListener('click', (event) => {
-  firstOfThreeDiv.style.display = "none";
-  secondOfThreeDiv.style.display = "none";
-  thirdOfThreeDiv.style.display = "block";
+thirdGBtn.addEventListener('click', (event) => {
+  firstG.style.display = "none";
+  secondG.style.display = "none";
+  fourthG.style.display = "none";
+  thirdG.style.display = "block";
 
-  firstOfThreeBtn.classList.remove("active");
-  secondOfThreeBtn.classList.remove("active");
-  thirdOfThreeBtn.classList.add("active");
+  firstGBtn.classList.remove("active");
+  secondGBtn.classList.remove("active");
+  fourthGBtn.classList.remove("active");
+  thirdGBtn.classList.add("active");
+});
+
+fourthGBtn.addEventListener('click', (event) => {
+  firstG.style.display = "none";
+  secondG.style.display = "none";
+  thirdG.style.display = "none";
+  fourthG.style.display = "block";
+
+  firstGBtn.classList.remove("active");
+  secondGBtn.classList.remove("active");
+  thirdGBtn.classList.remove("active");
+  fourthGBtn.classList.add("active");
 });
